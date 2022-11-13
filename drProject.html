@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dr. Rustamov </title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            width: 1440px;
+        }
+        header{
+            /* background-image: url(./InfoDetailsFrame.png);
+            background-position: right;
+            background-repeat: no-repeat;
+            color: white;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            /* width: 691px; */
+            /* height: 43px; */
+        }
+        .infoDetails{
+            background-image: url(./InfoDetailsFrame.png);
+            background-position: right;
+            background-repeat: no-repeat;
+            color: white;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            /* width: 691px; */
+            height: 43px;
+        }
+        .infoDetails span{
+            font-size: 12px;
+        }
+        .infoDetails span span{
+            position: relative;
+            bottom: 1px;
+        }
+        .insta{
+            position: relative;
+            right: 15px;
+            bottom: 3px;
+        }
+        .email-top{
+            position: relative;
+            right: 180px;
+        }
+        .phone-top{
+            position: relative;
+            right: 135px;
+        }
+        .address-top{
+            position: relative;
+            right: 95px;
+        }
+        .soc-media-top{
+            /* display: inline-block;
+            align-items: center; */
+            position: relative;
+            right: 40px;
+        }
+        .soc-media-top img{
+            margin: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        .topNavBar{
+            margin: 10px 0px 10px 5px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            color: #36A0CD;
+        }
+        .middleLogo{
+            position: absolute;
+            top: 780px;
+            left: 710px;
+        }
+        .aboutInfo{
+            position: relative;
+            right: 65px;
+            top: 80px;
+            /* margin: 20px; */
+            padding: 0;
+            border: 1px solid black;
+            width: 470px;
+            height: 230px;
+        }
+        .about{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 80px;
+        }
+        .aboutPhoto{
+            border-radius: 50px;
+            margin-top: 30px;
+            position: relative;
+            top: 20px;
+        }
+        .about-header{
+            position: relative;
+            left: 580px;
+        }
+        .middleLogo-1{
+            position: relative;
+            top: 30px;
+            left: 710px;
+        }
+        .services{
+            position: relative;
+            top: 30px;
+            left: 180px;
+            right: 156px;
+        }
+        .services div{
+            position: relative;
+            top: 50px;
+            border: 1px solid black;
+            width: 255px;
+            height: 450px;
+            display: inline-flex;
+            margin: 10px;
+            justify-content: space-around;
+        }
+        .services-header{
+            position: relative;
+            left: 545px;
+        }
+        .middleLogo-2{
+            position: relative;
+            top: 80px;
+            left: 715px;
+        }
+        .articles{
+            position: relative;
+            top: 100px;
+        }
+        .articles .articles-1 .articles-1-info, .articles-2 .articles-2-info, .articles-3 .articles-3-info{
+            border: 1px solid black;
+            width: 547.75px;
+            height: 401px;
+        }
+        .articles .articles-1, .articles-2, .articles-3{
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+        .articles-header{
+            position: relative;
+            left: 735px;
+        }
+        .middleLogo-3{
+            position: relative;
+            top: 80px;
+            left: 720px;
+        }
+        .feedback-header{
+            position: relative;
+            left: 710px;
+            top: 120px;
+        }
+        .feedback-reviews{
+            position: absolute;
+            left: 135px;
+            top: 4290px;
+            margin-bottom: 0px;
+        }
+        .feedback-reviews span{
+            margin: 0px;
+            padding: 0px;
+        }
+        .rev-sides{
+            width: 360px;
+            height: 448px;
+        }
+        .rev-main{
+            width: 424px;
+            height: 526px;
+        }
+        .middleLogo-4{
+            position: absolute;
+            left: 670px;
+            top: 4870px;
+            z-index: 1;
+        }
+        .contact-header{
+            position: relative;
+            left: 620px;
+            top: 70px;
+        }
+        .contact{
+            background-color: #36A0CD;
+            position: absolute;
+            top: 4935px;
+            width: 1440px;
+            height: 652px;
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .contact-inputs-left{
+            position: relative;
+            top: 140px;
+            padding: 0;
+            right: 150px;
+        }
+        .contact-inputs-left input{
+            width: 465px;
+            height: 52px;
+            background-color: #36A0CD;
+            border: 2px solid white;
+            color: white;
+            display: block;
+            padding-left: 15px;
+            margin: 75px 0px;
+            /* border-top-color: white;
+            border-left-color: white; */
+        }
+        .contact-inputs-right{
+            position: relative;
+            top: 205px;
+        }
+        .messageInfo{
+            width: 563.11px;
+            height: 298.66px;
+            background-color: #36A0CD;
+            color: white;
+            border-color: white;
+            padding-left: 15px;
+            padding-top: 15px;
+        }
+        .contact-inputs-right .messageInfo, .contactSubmit{
+            display: block;
+            margin: 10px;
+        }
+        .contactSubmit{
+            position: relative;
+            left: 485px;
+            cursor: pointer;
+        }
+        .footer-main{
+            background-color: black;
+            width: 1440px; 
+            height: 408px;
+            position: relative;
+            top: 635px;
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .bottomNav-1 ul, .bottomNav-2 ul{
+            list-style: none;
+            position: relative;
+            top: 100px;
+        }
+        .logo{
+            position: relative;
+            top: 150px;
+        }
+        .bottomNav-1 ul li, .bottomNav-2 ul li{
+            margin: 30px;
+        }
+        .soc-media-bottom{
+            position: relative;
+            top: 100px;
+        }
+        .soc-media-bottom span{
+            position: relative;
+            top: 30px;
+            left: 15px;
+            margin: 0px 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="infoDetails">
+            <span class="email-top"> <img src="./letterIcon.png"> <span> dr.gadirrustamov@gmail.com </span> </span>
+            <span class="phone-top"> <img src="./phoneIcon.png"> <span> (99470) 537-6662 </span> </span>
+            <span class="address-top"> <img src="./locationIcon.png"> <span> Müzəffər Həsənov 41 </span> </span>
+            <span class="soc-media-top"> <a style="text-decoration: none" href="#"> <img src="./youtubeIcon.png"> </a> <a style="text-decoration: none" href="#"><img src="./facebookIcon.png"></a> <a style="text-decoration: none" href="#"><img src="./instagramEllipse.png"> <img src="./instagramIcon.png" class="insta"> </a> </span>
+        </div>
+        <div class="topNav">
+            <nav>
+                <ul>
+                    <div class="topNavBar">
+                        <li> <a style="text-decoration: none" href="#">Ana Səhifə </a> </li>
+                        <li> <a style="text-decoration: none" href="#"> Haqqımda </a>  </li>
+                        <li> <a style="text-decoration: none" href="#"> Xidmətlər </a> </li>
+                        <li> <a style="text-decoration: none" href="#"> Qalereya </a> </li>
+                        <li> <a style="text-decoration: none" href="#"> <img src="./DR Logo.png"> </a> </li>
+                        <li> <a style="text-decoration: none" href="#"> Məqalələr </a> </li>
+                        <li> <a style="text-decoration: none" href="#"> Sual-Cavab </a> </li>
+                        <li> <a style="text-decoration: none" href="#"> Əlaqə </a> </li>
+                        <li> <select> <option value="AZ"> AZ </option> <option value="ENG"> ENG </option></select></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="photoMain"> <img src="./MainPhoto.svg"> </div>
+        <div class="middleLogo"> <img src="./middleLogo.png"></div>
+        <div class="about">
+            <h1 class="about-header"> Haqqımda </h1>
+            <div class="aboutInfo"> <span></span></div>
+            <div class="aboutPhoto"> <img src="./aboutPhoto.png" style="border-radius: 2550px; width: 300px; height: 300px;"> </div>
+        </div>
+        <div class="middleLogo-1"> <img src="./middleLogo.png"></div>
+        <div class="services">
+            <h1 class="services-header"> Xidmətlər </h1>
+            <div>  </div>
+            <div>  </div>
+            <div>  </div>
+            <div>  </div>
+        </div>
+        <div class="middleLogo-2"> <img src="./middleLogo.png"></div>
+        <div class="articles">
+            <h1 class="articles-header"> Məqalələr </h1>
+            <div class="articles-1">
+                <div class="articles-1-photo"> <img src="./grayPhoto.png"> </div>
+                <div class="articles-1-info"></div>
+            </div>
+            <div class="articles-2">
+                <div class="articles-2-info"></div>
+                <div class="articles-2-photo"> <img src="./grayPhoto.png"> </div>
+            </div>
+            <div class="articles-3">
+                <div class="articles-3-photo"> <img src="./grayPhoto.png"> </div>
+                <div class="articles-3-info"></div>
+            </div>
+        </div>
+        <div class="middleLogo-3"> <img src="./middleLogo.png"></div>
+        <div class="feedback">
+            <h1 class="feedback-header"> Müştəri Rəyləri </h1>
+            <div class="feecback-photo"> <img src="./feedbackPhoto.svg" width="1450px" height="1200px"> </div>
+            <div class="feedback-reviews"> 
+                <span class="rev-sides"> <img src="./reviews.png" class="rev-sides"> </span>     
+                <span class="rev-main"> <img src="./reviews.png" class="rev-main"> </span>
+                <span class="rev-sides"> <img src="./reviews.png" class="rev-sides"> </span>
+            </div>
+        </div>
+        <div class="middleLogo-4"> <img src="./middleLogo.png"></div>
+        <div class="contact">
+            <h1 class="contact-header"> Əlaqə </h1>
+            <div class="contact-inputs-left"> 
+                <input type="text" placeholder="Ad və Soyad" id="nameInfo" name="nameInfo" class="nameInfo" > <!-- border color ve placeholder text color nece deyishmek lazimdir?-->
+                <input type="email" placeholder="Email Ünvanınız" id="mailInfo" name="mailInfo" class="nameInfo">
+                <input type="tel" placeholder="Telefon" id="phoneInfo" name="phoneInfo" class="phoneInfo">    
+            </div>
+            <div class="contact-inputs-right"> 
+                <textarea placeholder="İsmarıcınız" id="messageInfo" name="messageInfo" class="messageInfo"></textarea>    
+                <input type="button" value="Gonder" style="background-color: white; color: black; border-radius: 25px; border-color: transparent; width: 95.44px; height: 29.23px;" class="contactSubmit">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-main">
+            <div class="logo"> <img src="./logoTransparent.png"> </div>
+            <div class="bottomNav-1">
+                <nav>
+                    <div>
+                        <ul> Xidmətlər
+                            <li> Dişlərin İmplantasiyası </li>
+                            <li> Estetik Stomatologiya </li>
+                            <li> Ortopedik Stomatologiya </li>
+                            <li> Terapevtik Stomatologiya </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="bottomNav-2">
+                <nav>
+                    <div>
+                        <ul> Əlaqə
+                            <li> <img src="./letterIcon.png"> dr.gadirrustamov@gmail.com </li>
+                            <li> <img src="./phoneIcon.png"> (99470) 537-6662 </li>
+                            <li> <img src="./locationIcon.png"> Müzəffər Həsənov 41 </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="soc-media-bottom">
+                <h2> SOSIAL </h2>
+                <span> <img src="./youtubeIcon.png"> </span>
+                <span> <img src="./facebookIcon.png"> </span>
+                <span> <img src="./instagramIcon.png"> </span>
+            </div>
+            <p class="endNote"></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
